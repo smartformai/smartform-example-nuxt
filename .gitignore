@@ -1,0 +1,11 @@
+﻿node_modules/
+.output/
+.nuxt/
+.nitro/
+.cache/
+.vercel/
+*.log
+.env
+.env.local
+.env.*.local
+.DS_Store

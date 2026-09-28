@@ -1,0 +1,14 @@
+{
+  "name": "smartform-example-nuxt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "nuxt": "^3.10.0",
+    "vue": "^3.4.0"
+  }
+}
