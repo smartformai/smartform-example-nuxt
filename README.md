@@ -49,7 +49,42 @@ npm run build         # ./.output
 ```
 
 Set `NUXT_SMARTFORM_FORM_ID` and `NUXT_SMARTFORM_ENDPOINT` in your hosting env.
+## Related examples
+[Next.js contact form](https://github.com/yanghuai123456/smartform-example-nextjs) | [SvelteKit contact form](https://github.com/yanghuai123456/smartform-example-sveltekit) | [Astro contact form](https://github.com/yanghuai123456/smartform-example-astro)
+
+
+## FAQ
+
+### Why use this instead of Formspree?
+
+Both SmartForm and Formspree let you POST a plain HTML form to a hosted
+endpoint with no backend. SmartForm adds an AI spam filter (not just
+honeypots), AI intent classification (`sales` / `support` / `inquiry`)
+and high-value lead detection, with a free tier that includes the spam
+filter. Formspree charges per submission; SmartForm's spam filter is
+free on every plan.
+
+### Is there a free tier?
+
+Yes. AI spam filtering is enabled by default on every plan. AI intent
+classification and high-value lead detection require a paid plan (Pro
+or Business) — the dashboard enforces this and returns HTTP 402 if
+you try to enable them on a free workspace.
+
+### Do I need an API key?
+
+No. The form posts directly to a public endpoint using only an 8-char
+form ID, which is non-enumerable. The example also includes a hidden
+`_gotcha` honeypot field so naive bots cannot submit.
+
+### Do I need a Nuxt server?
+Not necessarily. Two variants are included: a Nuxt 3 server route (Nitro) that hides the form ID, and a static, zero-JS plain form for fully static builds.
+
+## Related examples
+[Next.js contact form](https://github.com/yanghuai123456/smartform-example-nextjs) | [SvelteKit contact form](https://github.com/yanghuai123456/smartform-example-sveltekit) | [Astro contact form](https://github.com/yanghuai123456/smartform-example-astro)
+
 
 ## License
 
 MIT.
+
