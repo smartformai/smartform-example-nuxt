@@ -1,4 +1,4 @@
-# SmartForm + Nuxt 3
+# Nuxt 3 contact form — Formspree alternative with AI spam filtering
 
 Contact form for Nuxt 3, posting JSON to SmartForm AI via a server route.
 
